@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="Image/jpg" href="Иконка.jpg">
+  <meta charset="UTF-8">
+  <title>Об авторе</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="models.html">Модели</a></li>
+        <li><a href="gallery.html">Фото</a></li>
+        <li><a href="Creator.html">Об авторе</a></li>
+      </ul>
+    </nav>
+<main>
+    <section>
+    <h2>Информация об авторе</h2>
+    <p>Меня зовут Илья Кириллов, я родился 03.07.2006 и закончил Панковскую школу. На данный момент я учусь в Политехническом колледже. Я профессионал в области автомобилей. На этом сайте вы найдете информацию о  моих любимых машинах, а так же мою личную оценку данных авто. На этой странцие вы можете связаться со мной.</p>
+    <img src="автор.jpg" style="border-radius: 30px ;" alt="Фото автора" width="400" height="250">
+</section>
+
+<ol start="1" type="I">
+  <li class="fakt">1. Родился в Великом Новгороде</li>
+  <li class="fakt">2. 17 лет</li>
+  <li class="fakt">3. Рост 190см</li>
+  <li class="fakt">4. Карие глаза</li>
+  <li class="fakt">5. Люблю Бадминтон</li>
+</ol>
+
+<section>
+    <h2>Для связи с Автором</h2>
+    <form>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <label for="rating">Оценка сайта:</label>
+      <select id="rating" name="rating" required>
+          <option value="" disabled selected style="display:none">Выберите оценку</option>
+          <option value="excellent">Отлично</option>
+          <option value="good">Хорошо</option>
+          <option value="average">Удовлетворительно</option>
+          <option value="poor">Плохо</option>
+      </select>
+  
+      <input type="submit" value="Отправить">
+  </form>
+  <script>
+      document.querySelector('form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          alert('Данные записаны');
+      });
+  </script>
+</section>
+</main>
+  <footer>
+    <p>&copy; 2023 Кириллов Пакостин корпарейшн</p>
+    <p>Вы также можете следить за автором в социальных сетях: <a href="https://vk.com/fifer200">VK</a>, <a href="https://www.youtube.com/@smotraTV">youtube</a></p>
+    <p>
+      Этот веб-сайт создан для любителей автомобилей, чтобы предоставить интересную и полезную информацию о различных моделях автомобилей.Автор собраи подробные описания, фотографии и оценки автомобилей, чтобы помочь вам с выбором следующего автомобиля.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
